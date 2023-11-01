@@ -1,15 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+  <!-- con v-bind se manda una expresion de js y se puede reducir a solo : -->
+  <!-- <Counter v-bind:start="15"/> -->
+  <!-- <Counter :start="105"/> -->
+  <Indecision />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// en un import, la arroba (@) indica la carpeta src
+// import Counter from '@/components/Counter.vue';
+import Indecision from '@/components/Indecision.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // Counter,
+    Indecision
   }
 }
 </script>
